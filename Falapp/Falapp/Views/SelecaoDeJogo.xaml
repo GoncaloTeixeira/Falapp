@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Falapp.Views.SelecaoDeJogo"
+             BackgroundImage="WallPaper02.png" IsVisible="True">
+    <ContentPage.Content>
+        <Grid Margin="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="7*" />
+                <ColumnDefinition Width="7*" />
+                <ColumnDefinition Width="7*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+           
+            <!--Primeiro Botao-->
+            <ImageButton Grid.Column="1" Grid.Row="1" Source="Faz_Comigo.png" Clicked="Selecao_Faz_Comigo" BackgroundColor="Transparent" />
+
+            <!--Segundo Bota-->
+            <ImageButton Grid.Column="2" Grid.Row="1" Source="Repete.png" Clicked="Selecao_Repete" BackgroundColor="Transparent"/>
+         
+            <!--<BoxView Grid.Column="1" Grid.Row="1" Margin="5"
+                 Color="red" />
+            <Label Grid.Row="1"
+               Text="Row 1, Column 0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />-->
+            
+            <!--terceriro Botao-->
+            <ImageButton Grid.Column="3" Grid.Row="1" Source="Completa.png" Clicked="Selecao_Completa" BackgroundColor="Transparent"/>
+         
+  
+            
+            <!--Butao de Retroceder-->
+            <ImageButton Grid.Column="0" Grid.Row="0" Source="Retroceder.png" BackgroundColor="Transparent" Clicked="Retroceder"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

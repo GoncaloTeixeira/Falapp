@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Falapp.MainPage"
+             BackgroundImage="WallPaper01.jpg">
+
+
+    <ContentPage.Content>
+        <Grid Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="3*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <!--Primeiro Botao-->
+            <!--<BoxView Grid.Column="1" Grid.Row="1" Margin="5"
+                 Color="Teal" />-->
+            <ImageButton Grid.Column="2" Grid.Row="2" Source="Jogar01.png" Clicked="Iniciar_Selecao_Jogo" BackgroundColor="Transparent"/>
+
+            <!--Segundo Bota-->
+            <!--<BoxView Grid.Column="1" Grid.Row="2" Margin="5"
+                 Color="red" />
+            <Label Grid.Row="1"
+               Text="Row 1, Column 0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />-->
+            <ImageButton Grid.Column="2" Grid.Row="3" Source="Criar_Perfil.png" Clicked="Iniciar_Criar_Perfil" BackgroundColor="Transparent"/>
+
+            <!--terceriro Botao-->
+            <!--<BoxView Grid.Column="1" Grid.Row="3" Margin="5"
+                 Color="green" />
+            <Label Grid.Row="1"
+               Text="Row 1, Column 0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />-->
+            <ImageButton Grid.Column="2" Grid.Row="4" Source="Progresso.png" Clicked="Iniciar_Progresso" BackgroundColor="Transparent" />
+            
+            
+            <!--Botao de definiçoes-->
+            <ImageButton Grid.Column="4" Grid.Row="0" Source="Definicoes.png" Clicked="Iniciar_Definicoes" BackgroundColor="Transparent"/>
+        </Grid>
+
+        <!--<Image Source="" />-->
+
+    </ContentPage.Content>
+</ContentPage>

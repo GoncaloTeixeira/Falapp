@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Falapp.Jogar_Repete"
+             BackgroundImageSource="WallPaper02.png">
+   
+    <ContentPage.Content>
+        <Grid Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="12*" />
+                <ColumnDefinition Width="1*" />
+                
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="10*" />
+            </Grid.RowDefinitions>
+            
+          
+            <!-- Titulo do Jogo -->
+            <Label Grid.Column="1" Grid.Row="0" Margin="5" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontFamily="ChelseaMarket-Regular" FontSize="40" Text="Repetir" TextColor="White" />
+          
+
+
+         
+            <!-- frame que contem o Exercicio -->
+            <Frame Grid.Column="1" Grid.Row="1" Margin="20" BackgroundColor="WhiteSmoke" CornerRadius="20" BorderColor="green" HasShadow="True">
+                <Label FontSize="20" TextColor="blue" Text="Introduzir Exercicio Aqui" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </Frame>
+            
+            
+            <!--Botao de Retroceder-->
+            <ImageButton Grid.Column="0" Grid.Row="0" Source="Retroceder.png" BackgroundColor="Transparent" Clicked="Retroceder" />
+        
+        
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

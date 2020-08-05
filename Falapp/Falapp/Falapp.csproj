@@ -1,0 +1,122 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <UserSecretsId>f61e8d6d-2151-4f98-bf61-ba39de565635</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Jogar_Repete - Copy.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Views\Jogar_Repete - Copy.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Fonts\Candy-Cake.ttf" />
+    <None Remove="Resources\Fonts\ChelseaMarket-Regular.ttf" />
+    <None Remove="sounds\AAA.mp3" />
+    <None Remove="sounds\Barco.mp3" />
+    <None Remove="sounds\Colher.mp3" />
+    <None Remove="sounds\Cozinha.mp3" />
+    <None Remove="sounds\Crianca.mp3" />
+    <None Remove="sounds\Escola.mp3" />
+    <None Remove="sounds\Frigorifico.mp3" />
+    <None Remove="sounds\Mae.mp3" />
+    <None Remove="sounds\Peixe.mp3" />
+    <None Remove="sounds\Pirata.mp3" />
+    <None Remove="sounds\Praia.mp3" />
+    <None Remove="sounds\Sopa.mp3" />
+    <None Remove="sounds\Tesouro.mp3" />
+    <None Remove="Video\som_i.mp4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="sounds\AAA.mp3" />
+    <EmbeddedResource Include="Video\som_i.mp4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="sounds\Barco.mp3" />
+    <EmbeddedResource Include="sounds\Colher.mp3" />
+    <EmbeddedResource Include="sounds\Cozinha.mp3" />
+    <EmbeddedResource Include="sounds\Crianca.mp3" />
+    <EmbeddedResource Include="sounds\Escola.mp3" />
+    <EmbeddedResource Include="sounds\Frigorifico.mp3" />
+    <EmbeddedResource Include="sounds\Mae.mp3" />
+    <EmbeddedResource Include="sounds\Peixe.mp3" />
+    <EmbeddedResource Include="sounds\Pirata.mp3" />
+    <EmbeddedResource Include="sounds\Praia.mp3" />
+    <EmbeddedResource Include="sounds\Sopa.mp3" />
+    <EmbeddedResource Include="sounds\Tesouro.mp3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="Resources\Fonts\Candy-Cake.ttf" />
+    <Page Include="Resources\Fonts\ChelseaMarket-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LibVLCSharp" Version="3.4.5" />
+    <PackageReference Include="LibVLCSharp.Forms" Version="3.4.5" />
+    <PackageReference Include="LiveXAML" Version="2.1.73" />
+    <PackageReference Include="Plugin.MediaManager" Version="0.9.7" />
+    <PackageReference Include="Plugin.MediaManager.Forms" Version="0.9.7" />
+    <PackageReference Include="VideoLAN.LibVLC.Android" Version="3.2.0" />
+    <PackageReference Include="Xam.Plugin.SimpleAudioPlayer" Version="1.4.0" />
+    <PackageReference Include="Xamarin.Forms" Version="4.7.0.1080" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Criar_Perfil.xaml.cs">
+      <DependentUpon>Criar_Perfil.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Jogar_Faz_Comigo.xaml.cs">
+      <DependentUpon>Jogar_Faz_Comigo.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Jogar_Completa.xaml.cs">
+      <DependentUpon>Jogar_Completa.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Progresso.xaml.cs">
+      <DependentUpon>Progresso.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Definicoes.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Criar_Perfil.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Eliminar_Perfil.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Jogar_Repete.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MainPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SelecaoDeJogo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

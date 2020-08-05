@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Falapp.Views.Definicoes"
+             BackgroundImageSource="WallPaper02.png">
+    <ContentPage.Content>
+        <Grid Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <!-- Titulo Definições -->
+            <Label Grid.Column="1" Grid.Row="1" Margin="5" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontFamily="ChelseaMarket-Regular" FontSize="70" Text="Definições" TextColor="White" />
+
+            <ImageButton  Grid.Column="1" Grid.Row="2" Source="Desativar_Som.png" Clicked="Desativar_Som" BackgroundColor="Transparent"/>
+
+            <ImageButton Grid.Column="1" Grid.Row="3" Source="Eliminar_Perfil.png" Clicked="Eliminar_Perfil" BackgroundColor="Transparent"/>
+
+
+            <!--Botao de Retroceder-->
+            <ImageButton Grid.Column="0" Grid.Row="0" Source="Retroceder.png" BackgroundColor="Transparent" Clicked="Retroceder" />
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

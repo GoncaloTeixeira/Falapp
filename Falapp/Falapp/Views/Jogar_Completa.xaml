@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Falapp.Jogar_Completa"
+             BackgroundImageSource="WallPaper02.png">
+   
+    <ContentPage.Content>
+        <Grid Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="5*" />
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="5*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="1*" />
+                
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="12*" />
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            
+          
+            <!-- Titulo do Jogo -->
+            <Label Grid.Column="3" Grid.Row="0" Margin="5" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontFamily="ChelseaMarket-Regular" FontSize="25" Text="Cria Frases" TextColor="White" />
+          
+
+
+         
+            <!-- frame que contem o Exercicio -->
+            <Frame Grid.Column="1" Grid.ColumnSpan="5" Grid.Row="1" Grid.RowSpan="3" Margin="10" BackgroundColor="AntiqueWhite" CornerRadius="20" BorderColor="green" HasShadow="false"/>
+
+
+
+            <Image x:Name="image1" Grid.Column="2" Grid.Row="1" Source="Mae.png"   Margin="0" />
+            <Image x:Name="image2" Grid.Column="3" Grid.Row="1" Source="Cozinha.png"  Margin="0" />
+            <Image x:Name="image3" Grid.Column="4" Grid.Row="1" Source="Sopa.png"  Margin="0"/>
+
+
+
+
+
+            
+            <ImageButton x:Name="Ouvir1" Grid.Column="2" Grid.Row="2" Source="Bnt_Ouvir.png"  Margin="0" BackgroundColor="Transparent" Clicked="Ouvir1_Clicked"/>
+            <ImageButton x:Name="Ouvir2" Grid.Column="3" Grid.Row="2" Source="Bnt_Ouvir.png"  Margin="0" BackgroundColor="Transparent" Clicked="Ouvir2_Clicked"/>
+            <ImageButton x:Name="Ouvir3" Grid.Column="4" Grid.Row="2" Source="Bnt_Ouvir.png"  Margin="0"  BackgroundColor="Transparent" Clicked="Ouvir3_Clicked"/>
+
+
+            <ImageButton x:Name="Proximo" Grid.Column="5" Grid.Row="1" Grid.RowSpan="2" Source="Next_But.png"  Margin="0"  BackgroundColor="Transparent" Clicked="Proximo_Clicked"/>
+            
+            
+            <!--Botao de Retroceder-->
+            <ImageButton Grid.Column="0" Grid.Row="0" Source="Retroceder.png" BackgroundColor="Transparent" Clicked="Retroceder" />
+        
+        
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

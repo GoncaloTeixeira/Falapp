@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Falapp.Views.Criar_Perfil"
+             BackgroundImageSource="WallPaper02.png">
+    <ContentPage.Content>
+
+        <Grid Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="8*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="5*" />
+                <RowDefinition Height="5*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="1*" />
+
+            </Grid.RowDefinitions>
+            
+            
+            <!--Titulo da View Criar jogador-->
+        <Frame Grid.Column="1" Grid.Row="1" BackgroundColor="Transparent">
+            <Label FontSize="50" TextColor="blue" Text="Criar Jogador" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Transparent"/>
+        </Frame>
+
+            <Frame Grid.Column="1" Grid.Row="2" BackgroundColor="Transparent" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20*" />
+                        <RowDefinition Height="20*" />
+                    </Grid.RowDefinitions>
+                    <!--Label Nome e Idade-->
+                    <Label Grid.Column="0" Grid.Row="0" FontSize="25" TextColor="blue" Text="Nome" VerticalOptions="Center" HorizontalOptions="Center" />
+                    <Label Grid.Column="0" Grid.Row="1" FontSize="25" TextColor="blue" Text="Idade" VerticalOptions="Center" HorizontalOptions="Center" />
+                    <!--Pedir dados ao utilizador Nome e Idade-->
+                    <Editor Grid.Column="1" Grid.Row="0" Placeholder="" BackgroundColor="GreenYellow" StyleClass="" Text="" FontSize="20" ScaleY="1" />
+                    <Editor Grid.Column="1" Grid.Row="1" Placeholder="" BackgroundColor="GreenYellow" Keyboard="Numeric" ScaleY="1"/>
+                </Grid>
+               
+            </Frame>
+        <!--Butao de adicionar Jogador-->
+            <ImageButton Grid.Column="1" Grid.Row="3" Source="Comecar_Jogar.png" BackgroundColor="Transparent" Clicked="Retroceder" />
+            
+            
+        <!--Botao de Retroceder-->
+            <ImageButton Grid.Column="0" Grid.Row="0" Source="Retroceder.png" BackgroundColor="Transparent" Clicked="Retroceder" />
+
+
+
+        </Grid>
+
+
+
+
+
+    </ContentPage.Content>
+</ContentPage>
